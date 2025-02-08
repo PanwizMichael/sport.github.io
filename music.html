@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <header class="nav-header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#">Music</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Davido.mp3">Track 1</a></li>
+                        <li><a href="#track2">Track 2</a></li>
+                        <li><a href="#track3">Track 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="music-player">
+        <div class="background"></div>
+        <div class="player-container">
+            <img src="album.jpg" alt="Album Art" class="album-art">
+            <h2 class="track-title">Track Title</h2>
+            <audio id="audio" src="Davido.mp3"></audio>
+            <div class="controls">
+                <button id="prev">Prev</button>
+                <button id="play">Play</button>
+                <button id="pause">Pause</button>
+                <button id="next">Next</button>
+                <a id="download" href="your-music.mp3" download>Download</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+</body>
+</html>
